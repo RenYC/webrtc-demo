@@ -16,9 +16,9 @@ const router = createRouter({
           component: () => import('@/views/home/index.vue')
         },
         {
-          path: '/webrtc',
-          name: 'webrtc',
-          component: () => import('@/views/webrtc/index.vue')
+          path: '/webrtc/one2one',
+          name: 'one2one',
+          component: () => import('@/views/webrtc/one2one/index.vue')
         }
       ]
     }

@@ -24,15 +24,15 @@ async function hSet(key, hashkey, hashval) {
 
 async function hGetAll(key) {
   const promise = new Promise((resolve, reject) => {
-    redisClient.hgetall(key, (err, obj) => {
+    redisClient.hgetall(key, (err, val) => {
       if (err) {
         reject(err);
         return
       }
       if (val == null) {
-        resolve(obj);
+        resolve(valnull);
       }
-      resolve(obj)
+      resolve(val)
     })
   })
   return promise;
