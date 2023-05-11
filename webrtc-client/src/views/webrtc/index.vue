@@ -1,4 +1,7 @@
 <template>
-  <main>132</main>
+  <div>webrtc</div>
 </template>
+
 <script setup lang="ts"></script>
+
+<style scoped></style>
