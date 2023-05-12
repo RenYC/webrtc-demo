@@ -133,7 +133,7 @@ async function getRoomUser(roomId) {
 
 async function getRoomOnlyUserList(roomId) {
   let resList = []
-  let uMap = await hGetAll(roomKey + roomId)
+  let uMap = await hGetAll(roomkey + roomId)
   for (const key in uMap) {
     let detail = JSON.parse(uMap[key])
     resList.push(detail)
